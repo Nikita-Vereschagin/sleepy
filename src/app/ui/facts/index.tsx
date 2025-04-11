@@ -37,7 +37,10 @@ export const Facts = () => {
       <ul className="grid grid-cols-2 gap-10">
         {data.map((card, i) => {
           return (
-            <li className="grid gap-y-1 grid-rows-[max-content_1fr]" key={i}>
+            <li
+              className="grid gap-y-1 grid-rows-[max-content_1fr] bg-[#f6f0ff] box-border px-10 py-5 rounded-[10px] duration-500 hover:bg-[#d4bff3]"
+              key={i}
+            >
               <h3 className="font-semibold text-lg">{card.title}</h3>
               <p className="">{card.description}</p>
             </li>

@@ -10,10 +10,10 @@ export const About = () => {
       <div className="relative">
         <Image
           src={bg}
-          className="object-cover h-[100vh] rounded-[20px]"
+          className="object-cover h-[95vh] rounded-[20px]"
           alt="Ошибка"
         />
-        <div className="absolute flex flex-col justify-center items-center inset-0 bg-black/65 text-white text-center w-[100%] h-[100%] rounded-[20px]">
+        <div className="absolute flex flex-col justify-center items-center inset-0 bg-black/65 text-white text-center w-[100%] h-[100%] rounded-[20px] duration-500 hover:bg-black/40">
           <h1 className="font-bold text-7xl">Раскройте силу сна</h1>
           <p className="w-[75%] font-light text-xl my-10">
             Узнайте, как, уделяя внимание сну, вы можете улучшить свое здоровье,
@@ -22,12 +22,7 @@ export const About = () => {
           </p>
           <Link
             href="#facts"
-            className="flex w-[max-content] 
-            py-[20px] px-[60px] 
-            bg-[#4400b2] font-medium 
-            rounded-[30px] 
-            duration-1000
-            hover:scale-90"
+            className="flex w-[max-content] py-[20px] px-[60px] bg-[#4400b2] font-medium rounded-[30px] duration-1000 hover:scale-95"
           >
             Узнать больше
           </Link>

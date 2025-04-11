@@ -1,8 +1,5 @@
 import "./globals.css";
 
-import { Footer } from "./ui/footer";
-import { Header } from "./ui/header";
-
 export default function RootLayout({
   children,
 }: {
@@ -13,9 +10,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <Header />
       <body>{children}</body>
-      <Footer />
     </html>
   );
 }
