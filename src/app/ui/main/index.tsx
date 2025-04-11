@@ -2,13 +2,14 @@
 
 import { About } from "../about";
 import { Facts } from "../facts";
+import { Recommendations } from "../recommendations";
 
 export const Main = () => {
   return (
     <main id="main">
       <About />
       <Facts />
-      <div>Rec</div>
+      <Recommendations />
       <div>Contacts</div>
     </main>
   );

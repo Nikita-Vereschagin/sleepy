@@ -10,7 +10,7 @@ export const About = () => {
       <div className="relative">
         <Image
           src={bg}
-          className="object-cover h-[95vh] rounded-[20px]"
+          className="object-cover h-[90vh] rounded-[20px]"
           alt="Ошибка"
         />
         <div className="absolute flex flex-col justify-center items-center inset-0 bg-black/65 text-white text-center w-[100%] h-[100%] rounded-[20px] duration-500 hover:bg-black/40">
