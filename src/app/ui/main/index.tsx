@@ -1,6 +1,7 @@
 "use client";
 
 import { About } from "../about";
+import { Contacts } from "../contacts";
 import { Facts } from "../facts";
 import { Recommendations } from "../recommendations";
 
@@ -10,6 +11,7 @@ export const Main = () => {
       <About />
       <Facts />
       <Recommendations />
+      <Contacts />
       <div>Contacts</div>
     </main>
   );

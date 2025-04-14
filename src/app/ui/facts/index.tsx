@@ -25,8 +25,8 @@ const data = [
 
 export const Facts = () => {
   return (
-    <section className="mt-30 px-10" id="facts">
-      <h2 className="font-semibold text-5xl text-center">
+    <section className="px-10 mt-30" id="facts">
+      <h2 className="text-5xl font-semibold text-center">
         Статистика сна: немая эпидемия
       </h2>
       <p className="w-[80%] m-auto text-center mt-10 mb-15">
@@ -38,10 +38,10 @@ export const Facts = () => {
         {data.map((card, i) => {
           return (
             <li
-              className="grid gap-y-1 grid-rows-[max-content_1fr] bg-[#f6f0ff] box-border px-10 py-5 rounded-[10px] duration-500 hover:bg-[#d4bff3]"
+              className="grid gap-y-1 grid-rows-[max-content_1fr]  box-border px-10 py-5 rounded-[10px] duration-500 hover:bg-[#f6f0ff]"
               key={i}
             >
-              <h3 className="font-semibold text-lg">{card.title}</h3>
+              <h3 className="text-lg font-semibold">{card.title}</h3>
               <p className="">{card.description}</p>
             </li>
           );
