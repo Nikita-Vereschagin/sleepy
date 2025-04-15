@@ -12,7 +12,6 @@ export const Main = () => {
       <Facts />
       <Recommendations />
       <Contacts />
-      <div>Contacts</div>
     </main>
   );
 };

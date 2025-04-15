@@ -77,7 +77,7 @@ export const Recommendations = () => {
   return (
     <section
       id="recommendations"
-      className="w-[100%] box-border px-50 pt-20 mt-10 bg-[#f6f0ff] pb-10"
+      className="w-[100%] box-border pt-20 mt-10 bg-[#f6f0ff] pb-10"
     >
       <h2 className="text-5xl font-semibold text-center">
         Создайте условия для спокойного сна
@@ -86,14 +86,14 @@ export const Recommendations = () => {
         Получите советы и стратегии для улучшения сна: создайте расслабляющий
         режим, оптимизируйте спальню и управляйте стрессом.
       </p>
-      <ul className="flex flex-row gap-10 overflow-x-scroll border-x-[blur-sm] pb-10 snap-x snap-mandatory">
+      <ul className="flex flex-row gap-10 pb-10 overflow-x-scroll snap-x scroll-ps-6">
         {data.map((card, i) => {
           return (
             <li
               className="grid gap-y-3 grid-rows-[max-content__max-content_1fr] bg-white box-border px-10 py-5 rounded-[10px] min-w-100 snap-center"
               key={i}
             >
-              <div className="p-2 mt-2.5 text-xl text-center border rounded-full w-max aspect-square">
+              <div className="p-2 mt-2.5 text-xl text-center border rounded-full w-12 aspect-square">
                 {i + 1}
               </div>
               <h3 className="text-lg font-semibold">{card.title}</h3>
