@@ -45,8 +45,10 @@ const data = [
 export const Contacts = () => {
   return (
     <section id="contacts" className="w-[100%]">
-      <h2 className="text-5xl font-semibold text-center mt-25">Наша комнада</h2>
-      <p className="w-[80%] m-auto text-center my-10">
+      <h2 className="mt-10 text-3xl font-semibold text-center lg:text-5xl md:mt-25">
+        Наша комнада
+      </h2>
+      <p className="w-[80%] m-auto lg:text-xl text-center mt-5 mb-10 md:my-10">
         Наша команда эксперты, посвятившие себя изучению здорового сна и
         созданию инновационных решений для улучшения качества жизни людей.
       </p>
@@ -74,7 +76,7 @@ export const Contacts = () => {
           );
         })}
       </ul>
-      <p className="w-[80%] m-auto text-center my-15">
+      <p className="w-[80%] m-auto lg:text-xl text-center my-15">
         Мы объединили опыт сомнологов, психологов, технологов и дизайнеров,
         чтобы создать комплексный подход к проблеме недосыпа и некачественного
         отдыха. Наша миссия - помочь каждому человеку раскрыть потенциал

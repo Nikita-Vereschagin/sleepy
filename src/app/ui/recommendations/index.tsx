@@ -77,12 +77,12 @@ export const Recommendations = () => {
   return (
     <section
       id="recommendations"
-      className="w-[100%] box-border pt-20 mt-10 bg-[#f6f0ff] pb-10"
+      className="w-[100%] box-border pt-10 md:pt-20 mt-10 bg-[#f6f0ff] pb-10"
     >
-      <h2 className="text-5xl font-semibold text-center">
+      <h2 className="text-3xl font-semibold text-center lg:text-5xl">
         Создайте условия для спокойного сна
       </h2>
-      <p className="w-[80%] m-auto text-center mt-10 mb-15">
+      <p className="w-[80%] lg:text-xl m-auto text-center mt-5 mb-10 md:mt-10 md:mb-15">
         Получите советы и стратегии для улучшения сна: создайте расслабляющий
         режим, оптимизируйте спальню и управляйте стрессом.
       </p>
