@@ -1,39 +1,44 @@
 "use client";
 
 import Image from "next/image";
-import test from "../../../../public/bg_main.jpg";
+import egor from "../../../../public/egor.jpg";
+import lera from "../../../../public/lera.jpg";
+import alina from "../../../../public/alina.jpg";
+import liza from "../../../../public/liza.jpg";
+import adel from "../../../../public/adel.jpg";
+import nikita from "../../../../public/nikita.jpg";
 import s from "./index.module.css";
 
 const data = [
   {
-    src: test,
-    title: "Имя Фамилия",
-    description: "Описание",
+    src: egor,
+    title: "Егор",
+    description: "Разведчик",
   },
   {
-    src: test,
-    title: "Имя Фамилия",
-    description: "Описание",
+    src: lera,
+    title: "Лера",
+    description: "Оценщик",
   },
   {
-    src: test,
-    title: "Имя Фамилия",
-    description: "Описание",
+    src: alina,
+    title: "Алина",
+    description: "Коллективист",
   },
   {
-    src: test,
-    title: "Имя Фамилия",
-    description: "Описание",
+    src: liza,
+    title: "Лиза",
+    description: "Исполнитель",
   },
   {
-    src: test,
-    title: "Имя Фамилия",
-    description: "Описание",
+    src: adel,
+    title: "Адель",
+    description: "Доводчик",
   },
   {
-    src: test,
-    title: "Имя Фамилия",
-    description: "Описание",
+    src: nikita,
+    title: "Никита",
+    description: "Коллективист",
   },
 ];
 
@@ -50,13 +55,15 @@ export const Contacts = () => {
         {data.map((card, i) => {
           return (
             <li
-              className="grid items-center grid-cols-[max-content_1fr] rounded-full hover:[&_div]:opacity-100 active:[&_div]:w-50 hover:pr-10 hover:gap-x-5 active:bg-[#f6f0ff] active:[&_div]:opacity-100 hover:[&_div]:w-50 hover:bg-[#f6f0ff] active:pr-10 active:gap-x-5"
+              className="grid items-center grid-cols-[max-content_1fr] rounded-full 
+              hover:[&_div]:opacity-100 hover:pr-10 hover:gap-x-5 hover:[&_div]:w-25 hover:bg-[#f6f0ff] 
+              active:[&_div]:w-25 active::pr-10 active:bg-[#f6f0ff] active:[&_div]:opacity-100 active:gap-x-5"
               key={i}
             >
               <Image
                 src={card.src}
                 alt="Фотография"
-                className="rounded-full w-50 aspect-square"
+                className="object-cover rounded-full w-50 aspect-square"
               />
               <div className={`${s.animate} w-0 duration-1000 opacity-0`}>
                 <h4 className="text-2xl font-semibold">{card.title}</h4>
