@@ -2,19 +2,14 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import useWindowDimensions from "../../../hooks/useWindowDimension";
 
 const link_style =
   "h-full box-border md:py-5 text-lg font-light text-center duration-500 hover:bg-black/5 md:text-base md:active:bg-black/5";
 
 export const Header = () => {
-  const [width, setWidth] = useState(window.innerWidth);
   const [isClosed, setClosed] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { width } = useWindowDimensions();
 
   return (
     <header className="grid justify-around w-full py-5 text-black md:py-0 no-underlin md:grid-cols-5">
