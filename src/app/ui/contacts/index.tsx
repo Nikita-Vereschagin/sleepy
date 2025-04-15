@@ -51,21 +51,22 @@ export const Contacts = () => {
         созданию инновационных решений для улучшения качества жизни людей.
       </p>
 
-      <ul className="grid grid-cols-[repeat(6,max-content)] grid-rows-1 gap-x-5 justify-center overflow-hidden">
+      <ul className="grid xl:grid-cols-[repeat(6,max-content)] grid-rows-1 gap-5 justify-center overflow-hidden md:grid-cols-[max-content_max-content]">
         {data.map((card, i) => {
           return (
             <li
-              className="grid items-center grid-cols-[max-content_1fr] rounded-full 
-              hover:[&_div]:opacity-100 hover:pr-10 hover:gap-x-5 hover:[&_div]:w-25 hover:bg-[#f6f0ff] 
-              active:[&_div]:w-25 active::pr-10 active:bg-[#f6f0ff] active:[&_div]:opacity-100 active:gap-x-5"
+              className="grid items-center grid-cols-[max-content_1fr] gap-x-5
+              xl:gap-0 xl:hover:[&_div]:opacity-100 xl:hover:pr-10 xl:hover:gap-x-5 xl:hover:[&_div]:w-25"
               key={i}
             >
               <Image
                 src={card.src}
                 alt="Фотография"
-                className="object-cover rounded-full w-50 aspect-square"
+                className="object-cover rounded-full w-50 aspect-square md:w-40"
               />
-              <div className={`${s.animate} w-0 duration-1000 opacity-0`}>
+              <div
+                className={`${s.animate} xl:w-0 duration-1000 xl:opacity-0 w-25`}
+              >
                 <h4 className="text-2xl font-semibold">{card.title}</h4>
                 <p className="">{card.description}</p>
               </div>

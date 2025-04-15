@@ -14,8 +14,8 @@ export const About = () => {
           alt="Ошибка"
         />
         <div className="absolute flex flex-col justify-center items-center inset-0 bg-black/65 text-white text-center w-[100%] h-[100%] rounded-[20px] duration-500 hover:bg-black/40">
-          <h1 className="font-bold text-7xl">Раскройте силу сна</h1>
-          <p className="w-[75%] font-light text-xl my-10">
+          <h1 className="font-bold text-7xl md:text-5xl">Раскройте силу сна</h1>
+          <p className="w-[75%] font-light text-xl my-10 md:text-base">
             Узнайте, как, уделяя внимание сну, вы можете улучшить свое здоровье,
             самочувствие и качество жизни в целом. Познакомьтесь с наукой сна и
             научитесь формировать здоровые привычки сна.
