@@ -38,7 +38,7 @@ export const Facts = () => {
         {data.map((card, i) => {
           return (
             <li
-              className="grid gap-y-1 grid-rows-[max-content_1fr] box-border px-10 py-5 rounded-[10px] bg-[#f6f0ff] lg:bg-inherit duration-500 lg:hover:bg-[#f6f0ff]"
+              className="grid gap-y-1 grid-rows-[max-content_1fr] box-border px-10 py-5 rounded-[10px] bg-[#f6f0ff] lg:bg-inherit duration-500 lg:hover:bg-[#9f9aa7]"
               key={i}
             >
               <h3 className="text-lg font-semibold">{card.title}</h3>
